@@ -1,7 +1,37 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ellie's Igloo</title>
+  <link rel="stylesheet" href="style.css" />
+
+</head>
 <body>
-<h1>Hello World</h1>
-<p>I'm hosted with GitHub Pages.</p>
+  <div class="container">
+    <h1>❄️ Welcome to My Igloo ❄️</h1>
+    <div class="nav">
+      <button onclick="goTo('profile')">My Penguin</button>
+      <button onclick="goTo('projects')">Igloo Projects</button>
+      <button onclick="goTo('resume')">Job Board</button>
+      <button onclick="goTo('contact')">Mail</button>
+    </div>
+    <div id="content">
+      <p>This is the Town! Click a room to explore my Club Penguin–inspired world 🐧</p>
+    </div>
+  </div>
+
+  <script>
+    function goTo(section) {
+      const content = document.getElementById('content');
+      const text = {
+        profile: "Hi! I'm Ellie (aka Elnaz), a master's student in CS with a love for AI/ML.",
+        projects: "Check out my favorite tech projects—like minigames for the brain 🧠.",
+        resume: "Looking to hire a penguin? <a href='resume.pdf' target='_blank'>Download my resume</a>.",
+        contact: "Waddle up and send me a message at <a href='mailto:elnaz@example.com'>elnaz@example.com</a>!"
+      };
+      content.innerHTML = `<p>${text[section]}</p>`;
+    }
+  </script>
 </body>
 </html>

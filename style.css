@@ -1,0 +1,32 @@
+body {
+    margin: 0;
+    font-family: 'Comic Sans MS', 'VAG Rounded', sans-serif;
+    background: url('images/town-bg.jpg') no-repeat center center fixed;
+    background-size: cover;
+    color: #fff;
+    text-align: center;
+  }
+  
+  .container {
+    padding: 50px;
+    background-color: rgba(0, 0, 0, 0.4);
+    margin: 100px auto;
+    max-width: 600px;
+    border-radius: 20px;
+  }
+  
+  .nav button {
+    margin: 10px;
+    padding: 10px 20px;
+    font-size: 18px;
+    border-radius: 10px;
+    background-color: #00aaff;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .nav button:hover {
+    background-color: #0077cc;
+  }
+  
